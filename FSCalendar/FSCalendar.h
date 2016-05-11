@@ -22,6 +22,7 @@
 #import <UIKit/UIKit.h>
 #import "FSCalendarAppearance.h"
 #import "FSCalendarConstance.h"
+#import "FSCalendarStickyHeader.h"
 
 //! Project version number for FSCalendar.
 FOUNDATION_EXPORT double FSCalendarVersionNumber;
@@ -216,6 +217,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 IB_DESIGNABLE
 @interface FSCalendar : UIView
+
+@property (strong, nonatomic) NSTimeZone *timeZone;
+
+@property (strong, nonatomic) UICollectionView *collectionView;
+
+@property (strong, nonatomic) NSArray *weekdays;
+
+@property (strong, nonatomic) NSCalendar *calendar;
+
+- (void)initialize;
 
 /**
  * The object that acts as the delegate of the calendar.
