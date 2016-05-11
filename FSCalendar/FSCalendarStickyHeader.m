@@ -15,7 +15,6 @@
 @interface FSCalendarStickyHeader ()
 
 @property (weak, nonatomic) UIView *contentView;
-@property (weak, nonatomic) UIView *separator;
 
 @property (assign, nonatomic) BOOL needsAdjustingViewFrame;
 

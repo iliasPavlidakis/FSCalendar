@@ -20,6 +20,8 @@
 @property (strong, nonatomic) NSArray *weekdayLabels;
 @property (strong, nonatomic) NSDate *month;
 
+@property (weak, nonatomic) UIView *separator;
+
 - (void)invalidateHeaderFont;
 - (void)invalidateHeaderTextColor;
 - (void)invalidateWeekdayFont;
