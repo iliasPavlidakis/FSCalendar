@@ -222,7 +222,7 @@ IB_DESIGNABLE
 
 @property (strong, nonatomic) UICollectionView *collectionView;
 
-@property (strong, nonatomic) NSArray *weekdays;
+@property (strong, nonatomic) NSMutableArray *weekdays;
 
 @property (strong, nonatomic) NSCalendar *calendar;
 
