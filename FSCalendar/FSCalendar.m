@@ -54,13 +54,13 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
 {
     NSMutableArray *_selectedDates;
 }
-@property (strong, nonatomic) NSMutableArray             *weekdays;
+//@property (strong, nonatomic) NSMutableArray             *weekdays;
 @property (strong, nonatomic) NSMapTable                 *stickyHeaderMapTable;
 
-@property (strong, nonatomic) NSCalendar *calendar;
+//@property (strong, nonatomic) NSCalendar *calendar;
 @property (strong, nonatomic) NSDateFormatter *formatter;
 @property (strong, nonatomic) NSDateComponents *components;
-@property (strong, nonatomic) NSTimeZone *timeZone;
+//@property (strong, nonatomic) NSTimeZone *timeZone;
 
 @property (weak  , nonatomic) UIView                     *contentView;
 @property (weak  , nonatomic) UIView                     *daysContainer;
@@ -68,7 +68,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
 @property (weak  , nonatomic) UIView                     *topBorder;
 @property (weak  , nonatomic) UIView                     *bottomBorder;
 @property (weak  , nonatomic) FSCalendarScopeHandle      *scopeHandle;
-@property (weak  , nonatomic) FSCalendarCollectionView   *collectionView;
+//@property (weak  , nonatomic) FSCalendarCollectionView   *collectionView;
 @property (weak  , nonatomic) FSCalendarFlowLayout       *collectionViewLayout;
 @property (strong, nonatomic) FSCalendarAnimator         *animator;
 
