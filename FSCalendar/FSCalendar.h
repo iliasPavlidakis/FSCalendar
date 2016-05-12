@@ -156,6 +156,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (nullable UIColor *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance fillDefaultInnerColorForDate:(NSDate *)date;
 
+- (nullable UIColor *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance preferredGeneralUseDefaultColorForDate:(NSDate *)date;
+
 /**
  * Asks the delegate for a fill color in selected state for the specific date.
  */

@@ -39,6 +39,7 @@
 
 @property (strong, nonatomic) UIColor *preferredFillDefaultColor;
 @property (strong, nonatomic) UIColor *preferredFillInnerDefaultColor;
+@property (strong, nonatomic) UIColor *preferredGeneralUseDefaultColor;
 @property (strong, nonatomic) UIColor *preferredFillSelectionColor;
 @property (strong, nonatomic) UIColor *preferredTitleDefaultColor;
 @property (strong, nonatomic) UIColor *preferredTitleSelectionColor;
