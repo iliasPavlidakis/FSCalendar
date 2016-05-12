@@ -38,12 +38,14 @@
 @property (readonly, nonatomic) BOOL weekend;
 
 @property (strong, nonatomic) UIColor *preferredFillDefaultColor;
+@property (strong, nonatomic) UIColor *preferredFillInnerDefaultColor;
 @property (strong, nonatomic) UIColor *preferredFillSelectionColor;
 @property (strong, nonatomic) UIColor *preferredTitleDefaultColor;
 @property (strong, nonatomic) UIColor *preferredTitleSelectionColor;
 @property (strong, nonatomic) UIColor *preferredSubtitleDefaultColor;
 @property (strong, nonatomic) UIColor *preferredSubtitleSelectionColor;
 @property (strong, nonatomic) UIColor *preferredBorderDefaultColor;
+@property (strong, nonatomic) UIColor *preferredBorderInnerDefaultColor;
 @property (strong, nonatomic) UIColor *preferredBorderSelectionColor;
 @property (strong, nonatomic) id preferredEventColor;
 @property (assign, nonatomic) FSCalendarCellShape preferredCellShape;

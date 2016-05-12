@@ -1557,6 +1557,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
 {
     cell.preferredFillSelectionColor = [self preferredFillSelectionColorForDate:cell.date];
     cell.preferredFillDefaultColor = [self preferredFillDefaultColorForDate:cell.date];
+    cell.preferredFillInnerDefaultColor = [self preferredFillInnerDefaultColorForDate:cell.date];
     cell.preferredTitleDefaultColor = [self preferredTitleDefaultColorForDate:cell.date];
     cell.preferredTitleSelectionColor = [self preferredTitleSelectionColorForDate:cell.date];
     if (cell.subtitle) {
@@ -1565,6 +1566,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
     }
     if (cell.numberOfEvents) cell.preferredEventColor = [self preferredEventColorForDate:cell.date];
     cell.preferredBorderDefaultColor = [self preferredBorderDefaultColorForDate:cell.date];
+    cell.preferredBorderInnerDefaultColor = [self preferredBorderDefaultInnerColorForDate:cell.date];
     cell.preferredBorderSelectionColor = [self preferredBorderSelectionColorForDate:cell.date];
     cell.preferredCellShape = [self preferredCellShapeForDate:cell.date];
     
@@ -1773,6 +1775,15 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
     return nil;
 }
 
+- (UIColor *)preferredFillInnerDefaultColorForDate:(NSDate *)date
+{
+    if (self.delegateAppearance && [self.delegateAppearance respondsToSelector:@selector(calendar:appearance:fillDefaultInnerColorForDate:)]) {
+        UIColor *color = [self.delegateAppearance calendar:self appearance:self.appearance fillDefaultInnerColorForDate:date];
+        return color;
+    }
+    return nil;
+}
+
 - (UIColor *)preferredFillSelectionColorForDate:(NSDate *)date
 {
     if (self.delegateAppearance && [self.delegateAppearance respondsToSelector:@selector(calendar:appearance:fillSelectionColorForDate:)]) {
@@ -1846,6 +1857,15 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
 {
     if (self.delegateAppearance && [self.delegateAppearance respondsToSelector:@selector(calendar:appearance:borderDefaultColorForDate:)]) {
         UIColor *color = [self.delegateAppearance calendar:self appearance:self.appearance borderDefaultColorForDate:date];
+        return color;
+    }
+    return nil;
+}
+
+- (UIColor *)preferredBorderDefaultInnerColorForDate:(NSDate *)date
+{
+    if (self.delegateAppearance && [self.delegateAppearance respondsToSelector:@selector(calendar:appearance:borderDefaultInnerColorForDate:)]) {
+        UIColor *color = [self.delegateAppearance calendar:self appearance:self.appearance borderDefaultInnerColorForDate:date];
         return color;
     }
     return nil;
