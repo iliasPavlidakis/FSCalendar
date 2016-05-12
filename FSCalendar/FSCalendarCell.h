@@ -10,7 +10,6 @@
 #import "FSCalendar.h"
 #import "FSCalendarEventIndicator.h"
 #import "UIView+FSExtension.h"
-#import "FSCalendarDynamicHeader.h"
 #import "FSCalendarConstance.h"
 
 @interface FSCalendarCell : UICollectionViewCell

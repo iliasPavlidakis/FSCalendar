@@ -8,6 +8,7 @@
 
 #import "FSCalendarCell.h"
 #import "FSCalendar.h"
+#import "FSCalendarDynamicHeader.h"
 
 @interface FSCalendarCell ()
 
