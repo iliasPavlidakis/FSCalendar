@@ -24,6 +24,8 @@
 #import "FSCalendarConstance.h"
 #import "FSCalendarStickyHeader.h"
 
+@class FSCalendarCell;
+
 //! Project version number for FSCalendar.
 FOUNDATION_EXPORT double FSCalendarVersionNumber;
 
