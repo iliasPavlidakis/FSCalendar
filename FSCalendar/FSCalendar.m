@@ -493,6 +493,12 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
 {
     FSCalendarCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     [self reloadDataForCell:cell atIndexPath:indexPath];
+    
+    if (_delegate && [_delegate respondsToSelector:@selector(calendar:customizeCell:forDate:)]) {
+        NSDate *selectedDate = [self dateForIndexPath:indexPath];
+        [_delegate calendar:self customizeCell:cell forDate:selectedDate];
+    }
+    
     return cell;
 }
 

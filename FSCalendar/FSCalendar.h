@@ -138,6 +138,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)calendarCurrentScopeWillChange:(FSCalendar *)calendar animated:(BOOL)animated FSCalendarDeprecated(-calendar:boundingRectWillChange:animated:);
 - (void)calendarCurrentMonthDidChange:(FSCalendar *)calendar FSCalendarDeprecated(-calendarCurrentPageDidChange:);
 
+- (void)calendar:(FSCalendar *)calendar customizeCell:(FSCalendarCell *)calendar forDate:(NSDate *)date;
+
 @end
 
 /**
