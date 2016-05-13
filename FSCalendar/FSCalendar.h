@@ -632,6 +632,8 @@ IB_DESIGNABLE
  */
 - (NSString *)stringFromDate:(NSDate *)date;
 
+- (NSDate *)dateForIndexPath:(NSIndexPath *)indexPath;
+
 @end
 
 #pragma mark - Deprecate
